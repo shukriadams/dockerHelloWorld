@@ -1,0 +1,11 @@
+# ??
+version: "2"
+services:
+  helloworld:
+    container_name: helloworld
+    image: shukriadams/helloworld
+    restart: unless-stopped
+    environment:
+      PORT : 8080
+    ports:
+    - "8080:8080"
